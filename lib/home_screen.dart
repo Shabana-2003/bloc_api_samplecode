@@ -69,18 +69,20 @@ class _HomePageState extends State<HomePage> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "${model.activity} : ${model.type}",
+          "  activity : ${model.activity} \n   type : ${model.type} \n   participants : ${model.participants}",
+          //'activity' and 'type' are fetched from api
+          style: TextStyle(fontWeight: FontWeight.bold,color: Color.fromARGB(255, 71, 71, 71),fontSize: 30),
         ),
         const SizedBox(
-          height: 10,
+          height: 30,
           width: double.infinity,
         ),
-        TextButton(
+        ElevatedButton(
           onPressed: () {
             _homeBloc.add(GetDataList());
           },
           child: const Text(
-            "Reload",
+            "+",
           ),
         ),
       ],

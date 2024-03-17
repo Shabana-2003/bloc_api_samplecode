@@ -15,7 +15,7 @@ class HomeInitial extends HomeState {}
 class HomeLoading extends HomeState {}
 
 class HomeLoaded extends HomeState {
-  final ModelData modelData;
+  final ModelData modelData;// activity and type
   const HomeLoaded(this.modelData);
 }
 

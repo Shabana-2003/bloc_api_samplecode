@@ -1,4 +1,4 @@
-
+//bloc class
 import 'package:bloc_app/api_repocitory.dart';
 import 'package:bloc_app/bloc_event.dart';
 import 'package:bloc_app/bloc_state.dart';
